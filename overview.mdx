@@ -1,0 +1,68 @@
+---
+title: "Overview"
+---
+<Accordion title="API Base URL.">
+  **Live Server**:https://sandbox.api.getstrada.com
+</Accordion>
+
+Security
+<AccordionGroup>
+  <Accordion title="Bearer Auth (token_auth)">
+    Provide your bearer token in the Authorization header when making requests to protected resources.
+
+    Example: `Authorization: Bearer 123`
+  </Accordion>
+
+  <Accordion title="Bearer Auth (token_auth_2)">
+    Provide your bearer token in the Authorization header when making requests to protected resources.
+
+    Example: `Authorization: Bearer 123`
+  </Accordion>
+
+  <Accordion title="Bearer Auth (token_auth_3)">
+    Provide your bearer token in the Authorization header when making requests to protected resources.
+    
+    Example: `Authorization: Bearer 123`
+  </Accordion>
+</AccordionGroup>
+
+## Authorize End User Connection With Strada Link
+
+To securely authenticate an end user's connection to an accounting platform you will need to:
+
+1. Get a token to access Strada Link
+2. Initialize Strada Link component in your app
+3. Receive a public token after your user authenticates
+4. Exchange the public token for a private one
+
+These steps are outlined in detail as follows:
+
+**1. Get a token to access Strada Link**
+
+In your backend, create a POST request to get a `link_access_token` from this URL:
+
+`https://<ENV>.api.getstrada.com/v1/link/link_access_token`
+
+Pass in your Strada API key as an `Auth` header (`--header 'Authorization: Bearer sandbox_2a48c2a4-bc1f-4537-a89b-1058ca4f916e'`). See the POST request body and API response here.
+
+**2. Initialize Strada Link component in your app**
+
+Strada Link is published to [npm](https://www.npmjs.com/package/@stradahq/strada-link-react) as a React library. The source code can be found [here](https://github.com/strada-api/strada-link-react). You can install this library using:
+
+`npm i @stradahq/strada-link-react`
+
+After installing the library, add it to your project:
+
+`import { StradaLink } from '@stradahq/strada-link-react'
+`
+To invoke `useStradaLink` you need to provide an `env` (one of `sandbox`, `prod`), `linkAccessToken`, `onSuccess` call back function.
+
+**3. Receive a public token after your user authenticates**
+
+Once the user finishes authenticating and `auth_success` page is received, `onSuccess` method will be invoked and a `public_token` will be returned.
+
+**4. Exchange the public token for a private one**
+
+In your backend, swap `public_connection_token` for a private `api_connection_token`. See the POST request body and API response here.
+
+Store the `api_connection_token` in your database as it will be used to authenticate future accounting API requests for this given end user.

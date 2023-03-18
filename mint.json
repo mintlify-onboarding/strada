@@ -1,0 +1,33 @@
+{
+  "name": "Strada",
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "api": {
+    "baseUrl": "https://sandbox.api.getstrada.com"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#4F46E5",
+    "light": "#8982FF",
+    "dark": "#221AB1"
+  },
+  "topbarCtaButton": {
+    "name": "Get Early Access",
+    "url": "https://www.getstrada.co/"
+  },
+  "anchors": [
+    {
+      "name": "API Reference",
+      "icon": "square-terminal",
+      "url": "api-reference"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Overview",
+      "pages": ["overview"]
+    }
+  ]
+}
