@@ -30,9 +30,15 @@
       "pages": ["overview"]
     },
     {
-      "group": "API Reference",
+      "group": "Endpoints",
       "pages": [
-        "/api-reference/list-all-accounts"
+        {
+          "group": "Accounts",
+          "pages": [
+            "api-reference/list-all-accounts",
+            "api/reference/create-an-account"
+          ]
+        }
       ]
     }
   ]
