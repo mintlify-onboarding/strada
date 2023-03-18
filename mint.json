@@ -30,7 +30,7 @@
       "pages": ["overview"]
     },
     {
-      "group": "api-reference",
+      "group": "API Reference",
       "pages": [
         "/api-reference/list-all-accounts"
       ]
