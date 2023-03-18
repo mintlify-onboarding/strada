@@ -47,6 +47,22 @@
             "api-reference/create-an-expense",
             "api-reference/get-an-expense"
           ]
+        },
+        {
+          "group": "Vendors",
+          "pages": [
+            "api-reference/list-all-vendors",
+            "api-reference/create-a-vendor",
+            "api-reference/get-a-vendor"
+          ]
+        },
+        {
+          "group": "Bills",
+          "pages": [
+            "api-reference/list-all-bills",
+            "api-reference/create-a-bill",
+            "api-reference/get-a-bill"
+          ]
         }
       ]
     }
