@@ -63,6 +63,50 @@
             "api-reference/create-a-bill",
             "api-reference/get-a-bill"
           ]
+        },
+        {
+          "group": "Bill_Payments",
+          "pages": [
+            "api-reference/list-all-bill-payments",
+            "api-reference/create-a-bill-payment",
+            "api-reference/get-a-bill-payment"
+          ]
+        },
+        {
+          "group": "Transaction",
+          "pages": [
+            "api-reference/match-a-transaction"
+          ]
+        },
+        {
+          "group": "Rules",
+          "pages": [
+            "api-reference/list-all-rules",
+            "api-reference/create-a-rule",
+            "api-reference/get-a-rule",
+            "api-reference/remove-a-rule"
+          ]
+        },
+        {
+          "group": "Links",
+          "pages": [
+            "api-reference/create-a-link-access-token",
+            "api-reference/get-api-connection-token",
+            "api-reference/get-link-access-token-info"
+          ]
+        },
+        {
+          "group": "Connections",
+          "pages": [
+            "api-reference/delete-a-connection"
+          ]
+        },
+        {
+          "group": "Internal",
+          "pages": [
+            "api-reference/create-a-new-platform",
+            "api-reference/create-a-new-business"
+          ]
         }
       ]
     }
