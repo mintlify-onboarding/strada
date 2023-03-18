@@ -36,7 +36,8 @@
           "group": "Accounts",
           "pages": [
             "api-reference/list-all-accounts",
-            "api/reference/create-an-account"
+            "api-reference/create-an-account",
+            "api-reference/get-an-account"
           ]
         }
       ]
