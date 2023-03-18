@@ -2,10 +2,10 @@
 title: "Overview"
 ---
 <Accordion title="API Base URL">
-  **Live Server**:https://sandbox.api.getstrada.com
+  **Live Server**: https://sandbox.api.getstrada.com
 </Accordion>
 
-Security
+**Security**
 <AccordionGroup>
   <Accordion title="Bearer Auth (token_auth)">
     Provide your bearer token in the Authorization header when making requests to protected resources.
@@ -43,7 +43,7 @@ In your backend, create a POST request to get a `link_access_token` from this UR
 
 `https://<ENV>.api.getstrada.com/v1/link/link_access_token`
 
-Pass in your Strada API key as an `Auth` header (`--header 'Authorization: Bearer sandbox_2a48c2a4-bc1f-4537-a89b-1058ca4f916e'`). See the POST request body and API response here.
+Pass in your Strada API key as an `Auth` header (`--header 'Authorization: Bearer sandbox_2a48c2a4-bc1f-4537-a89b-1058ca4f916e'`). See the POST request body and API response [here](/api-reference/create-a-link-access-token).
 
 **2. Initialize Strada Link component in your app**
 
@@ -63,6 +63,6 @@ Once the user finishes authenticating and `auth_success` page is received, `onSu
 
 **4. Exchange the public token for a private one**
 
-In your backend, swap `public_connection_token` for a private `api_connection_token`. See the POST request body and API response here.
+In your backend, swap `public_connection_token` for a private `api_connection_token`. See the POST request body and API response [here](/api-reference/get-api-connection-token).
 
 Store the `api_connection_token` in your database as it will be used to authenticate future accounting API requests for this given end user.
