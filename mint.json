@@ -28,6 +28,12 @@
     {
       "group": "Overview",
       "pages": ["overview"]
+    },
+    {
+      "group": "api-reference",
+      "pages": [
+        "/api-reference/list-all-accounts"
+      ]
     }
   ]
 }
