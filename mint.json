@@ -121,7 +121,10 @@
         "api-reference/schema/newbusiness", 
         "api-reference/schema/business",
         "api-reference/schema/emptyresponse",
-        "api-reference/schema/enrichedtransactiontomatch"
+        "api-reference/schema/enrichedtransactiontomatch",
+        "api-reference/schema/matchedaccountingcategory",
+        "api-reference/schema/matchedaccountingvendor",
+        "api-reference/schema/matchedtransaction"
       ]
     }
   ]

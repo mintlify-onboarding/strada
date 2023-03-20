@@ -1,16 +1,16 @@
 ---
-title: "EnrichedTransactionToMatch"
+title: "MatchedAccountingCategory"
 ---
 
-<ParamField path="merchant_name" type="string" required>
+<ParamField path="id" type="string" required>
 </ParamField>
-<ParamField path="merchant_category" type="string">
+<ParamField path="remote_id" type="string" required>
 </ParamField>
-<ParamField path="mcc" type="string">
+<ParamField path="name" type="string" required>
 </ParamField>
-<ParamField path="date" type="string<date>">
+<ParamField path="account_number" type="string" required>
 </ParamField>
-<ParamField path="amount" type="number">
+<ParamField path="classification" type="string" required>
 </ParamField>
 <ParamField path="currency" type="string">
     **ISO 4217 currency code** Allowed values: `AFN` `EUR` `ALL` `DZD` `USD` `AOA` `XCD` `ARS` `AMD` `AWG` `AUD` `AZN` `BSD` `BHD``BDT` `BBD` `BYN` `BZD` `XOF` `BMD` `INR` `BTN` `BOB` `BOV` `BAM` `BWP` `NOK` `BRL` `BND` `BGN` `BIF` `CVE` `KHR` `XAF` `CAD` `KYD` `CLP` `CLF` `CNY` `COP` `COU` `KMF` `CDF` `NZD` `CRC` `HRK` `CUP` `CUC` `ANG` `CZK` `DKK` `DJF` `DOP` `EGP` `SVC` `ERN` `SZL`
@@ -139,17 +139,23 @@ title: "EnrichedTransactionToMatch"
 `XPT`
 `XAG`
 </ParamField>
-<ParamField path="country" type="string">
+<ParamField path="current_balance" type="number">
+</ParamField>
+<ParamField path="status" type="string">
+</ParamField>
+<ParamField path="confidence" type="number" required>
 </ParamField>
 
 ```json Example
 {
-  "merchant_name": "string",
-  "merchant_category": "string",
-  "mcc": "string",
-  "date": "2019-08-24",
-  "amount": 0,
+  "id": "string",
+  "remote_id": "string",
+  "name": "string",
+  "account_number": "string",
+  "classification": "string",
   "currency": "AFN",
-  "country": "string"
+  "current_balance": 0,
+  "status": "string",
+  "confidence": 0
 }
 ```
