@@ -124,7 +124,19 @@
         "api-reference/schema/enrichedtransactiontomatch",
         "api-reference/schema/matchedaccountingcategory",
         "api-reference/schema/matchedaccountingvendor",
-        "api-reference/schema/matchedtransaction"
+        "api-reference/schema/matchedtransaction",
+        "api-reference/schema/vendoraddress", 
+        "api-reference/schema/vendor",
+        "api-reference/schema/newvendor",
+        "api-reference/schema/account",
+        "api-reference/schema/newaccount",
+        "api-reference/schema/expenselineitem",
+        "api-reference/schema/expense",
+        "api-reference/schema/newexpenselineitem",
+        "api-reference/schema/newexpense",
+        "api-reference/schema/newaccesstoken",
+        "api-reference/schema/accesstoken",
+        "api-reference/schema/getapiconnectiontoken"
       ]
     }
   ]
