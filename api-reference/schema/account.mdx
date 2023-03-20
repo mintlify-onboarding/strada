@@ -1,0 +1,185 @@
+---
+title: "Account"
+---
+
+<ParamField path="id" type="string" required>
+</ParamField>
+<ParamField path="classification" type="string" required>
+    Allowed values: `asset`
+`expense`
+`equity`
+`liability`
+`income`
+`nonposting`
+`unknown`
+</ParamField>
+<ParamField path="account_type" type="string" required>
+    Allowed values: `accounts_payable`
+`accounts_receivable`
+`bank`
+`cost_of_goods_sold`
+`credit_card`
+`equity`
+`expense`
+`fixed_asset`
+`income`
+`liability`
+`long_term_liability`
+`non_posting`
+`other_asset`
+`other_current_asset`
+`other_current_liability`
+`other_expense`
+`other_income`
+`unknown`
+</ParamField>
+<ParamField path="name" type="string">
+</ParamField>
+<ParamField path="account_number" type="string">
+</ParamField>
+<ParamField path="currency" type="string">
+    **ISO 4217 currency code** Allowed values: `AFN` `EUR` `ALL` `DZD` `USD` `AOA` `XCD` `ARS` `AMD` `AWG` `AUD` `AZN` `BSD` `BHD``BDT` `BBD` `BYN` `BZD` `XOF` `BMD` `INR` `BTN` `BOB` `BOV` `BAM` `BWP` `NOK` `BRL` `BND` `BGN` `BIF` `CVE` `KHR` `XAF` `CAD` `KYD` `CLP` `CLF` `CNY` `COP` `COU` `KMF` `CDF` `NZD` `CRC` `HRK` `CUP` `CUC` `ANG` `CZK` `DKK` `DJF` `DOP` `EGP` `SVC` `ERN` `SZL`
+`ETB`
+`FKP`
+`FJD`
+`XPF`
+`GMD`
+`GEL`
+`GHS`
+`GIP`
+`GTQ`
+`GBP`
+`GNF`
+`GYD`
+`HTG`
+`HNL`
+`HKD`
+`HUF`
+`ISK`
+`IDR`
+`XDR`
+`IRR`
+`IQD`
+`ILS`
+`JMD`
+`JPY`
+`JOD`
+`KZT`
+`KES`
+`KPW`
+`KRW`
+`KWD`
+`KGS`
+`LAK`
+`LBP`
+`LSL`
+`ZAR`
+`LRD`
+`LYD`
+`CHF`
+`MOP`
+`MKD`
+`MGA`
+`MWK`
+`MYR`
+`MVR`
+`MRU`
+`MUR`
+`XUA`
+`MXN`
+`MXV`
+`MDL`
+`MNT`
+`MAD`
+`MZN`
+`MMK`
+`NAD`
+`NPR`
+`NIO`
+`NGN`
+`OMR`
+`PKR`
+`PAB`
+`PGK`
+`PYG`
+`PEN`
+`PHP`
+`PLN`
+`QAR`
+`RON`
+`RUB`
+`RWF`
+`SHP`
+`WST`
+`STN`
+`SAR`
+`RSD`
+`SCR`
+`SLL`
+`SLE`
+`SGD`
+`XSU`
+`SBD`
+`SOS`
+`SSP`
+`LKR`
+`SDG`
+`SRD`
+`SEK`
+`CHE`
+`CHW`
+`SYP`
+`TWD`
+`TJS`
+`TZS`
+`THB`
+`TOP`
+`TTD`
+`TND`
+`TRY`
+`TMT`
+`UGX`
+`UAH`
+`AED`
+`USN`
+`UYU`
+`UYI`
+`UYW`
+`UZS`
+`VUV`
+`VES`
+`VED`
+`VND`
+`YER`
+`ZMW`
+`ZWL`
+`XBA`
+`XBB`
+`XBC`
+`XBD`
+`XTS`
+`XXX`
+`XAU`
+`XPD`
+`XPT`
+`XAG`   
+</ParamField>
+<ParamField path="current_balance" type="number">
+</ParamField>
+<ParamField path="status" type="string" required>
+</ParamField>
+
+```json Example
+{
+  "id": "string",
+  "remote_id": "string",
+  "classification": "asset",
+  "account_type": "accounts_payable",
+  "name": "string",
+  "account_number": "string",
+  "currency": "AFN",
+  "current_balance": 0,
+  "status": "string"
+}
+```
+

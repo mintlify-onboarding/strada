@@ -1,0 +1,207 @@
+---
+title: "Vendor"
+---
+
+<ParamField path="id" type="string" required>
+</ParamField>
+<ParamField path="remote_id" type="string" required>
+</ParamField>
+<ParamField path="contact_name" type="string">
+</ParamField>
+<ParamField path="email" type="string<email>">
+</ParamField>
+<ParamField path="website" type="string<url>">
+</ParamField>
+<ParamField path="currency" type="string">
+ **ISO 4217 currency code** Allowed values: `AFN` `EUR` `ALL` `DZD` `USD` `AOA` `XCD` `ARS` `AMD` `AWG` `AUD` `AZN` `BSD` `BHD``BDT` `BBD` `BYN` `BZD` `XOF` `BMD` `INR` `BTN` `BOB` `BOV` `BAM` `BWP` `NOK` `BRL` `BND` `BGN` `BIF` `CVE` `KHR` `XAF` `CAD` `KYD` `CLP` `CLF` `CNY` `COP` `COU` `KMF` `CDF` `NZD` `CRC` `HRK` `CUP` `CUC` `ANG` `CZK` `DKK` `DJF` `DOP` `EGP` `SVC` `ERN` `SZL`
+`ETB`
+`FKP`
+`FJD`
+`XPF`
+`GMD`
+`GEL`
+`GHS`
+`GIP`
+`GTQ`
+`GBP`
+`GNF`
+`GYD`
+`HTG`
+`HNL`
+`HKD`
+`HUF`
+`ISK`
+`IDR`
+`XDR`
+`IRR`
+`IQD`
+`ILS`
+`JMD`
+`JPY`
+`JOD`
+`KZT`
+`KES`
+`KPW`
+`KRW`
+`KWD`
+`KGS`
+`LAK`
+`LBP`
+`LSL`
+`ZAR`
+`LRD`
+`LYD`
+`CHF`
+`MOP`
+`MKD`
+`MGA`
+`MWK`
+`MYR`
+`MVR`
+`MRU`
+`MUR`
+`XUA`
+`MXN`
+`MXV`
+`MDL`
+`MNT`
+`MAD`
+`MZN`
+`MMK`
+`NAD`
+`NPR`
+`NIO`
+`NGN`
+`OMR`
+`PKR`
+`PAB`
+`PGK`
+`PYG`
+`PEN`
+`PHP`
+`PLN`
+`QAR`
+`RON`
+`RUB`
+`RWF`
+`SHP`
+`WST`
+`STN`
+`SAR`
+`RSD`
+`SCR`
+`SLL`
+`SLE`
+`SGD`
+`XSU`
+`SBD`
+`SOS`
+`SSP`
+`LKR`
+`SDG`
+`SRD`
+`SEK`
+`CHE`
+`CHW`
+`SYP`
+`TWD`
+`TJS`
+`TZS`
+`THB`
+`TOP`
+`TTD`
+`TND`
+`TRY`
+`TMT`
+`UGX`
+`UAH`
+`AED`
+`USN`
+`UYU`
+`UYI`
+`UYW`
+`UZS`
+`VUV`
+`VES`
+`VED`
+`VND`
+`YER`
+`ZMW`
+`ZWL`
+`XBA`
+`XBB`
+`XBC`
+`XBD`
+`XTS`
+`XXX`
+`XAU`
+`XPD`
+`XPT`
+`XAG`   
+</ParamField>
+<ParamField path="phone" type="string">
+</ParamField>
+<ParamField path="registration_number" type="string">
+</ParamField>
+<ParamField path="tax_number" type="string">
+</ParamField>
+
+<ResponseField name="addresses" type="array[object]">
+  <Expandable title="properties">
+    <ResponseField name="address_type" type="string">
+    </ResponseField>
+
+    <ResponseField name="address_line_1" type="string">
+    </ResponseField>
+
+    <ResponseField name="address_line_2" type="string">
+    </ResponseField>
+
+    <ResponseField name="city" type="string">
+    </ResponseField>
+
+    <ResponseField name="region" type="string">
+    </ResponseField>
+
+    <ResponseField name="postal_code" type="string">
+    </ResponseField>
+
+    <ResponseField name="country" type="string">
+    </ResponseField>
+
+
+  </Expandable>
+</ResponseField>
+
+
+
+<ParamField path="status" type="string">
+</ParamField>
+
+
+```json Example
+{
+  "id": "string",
+  "remote_id": "string",
+  "vendor_name": "string",
+  "contact_name": "string",
+  "email": "user@example.com",
+  "website": "string",
+  "currency": "AFN",
+  "phone": "string",
+  "registration_number": "string",
+  "tax_number": "string",
+  "addresses": [
+    {
+      "address_type": "string",
+      "address_line_1": "string",
+      "address_line_2": "string",
+      "city": "string",
+      "region": "string",
+      "postal_code": "string",
+      "country": "string"
+    }
+  ],
+  "status": "string"
+}
+```
