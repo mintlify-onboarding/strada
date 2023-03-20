@@ -113,7 +113,8 @@
     {
       "group": "Schemas",
       "pages": [
-        "schema/rule"
+        "api-reference/schema/rule",
+        "api-reference/schema/error"
       ]
     }
   ]

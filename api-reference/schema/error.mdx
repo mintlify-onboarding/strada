@@ -1,0 +1,25 @@
+---
+title: "Error"
+---
+
+<ParamField path="type" type="string" required>
+    Allowed Values: `PLATFORM_ERROR` `STRADA_ERROR` `VALIDATION_ERROR`
+</ParamField>
+<ParamField path="message" type="string" required>
+</ParamField>
+<ParamField path="detail" type="string" required>
+</ParamField>
+<ParamField path="platform" type="string">
+</ParamField>
+<ParamField path="remote_id" type="string">
+</ParamField>
+
+```json Example    
+{
+  "type": "PLATFORM_ERROR",
+  "message": "string",
+  "detail": "string",
+  "platform": "string",
+  "remote_id": "string"
+}
+```
