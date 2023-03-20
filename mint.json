@@ -121,7 +121,7 @@
         "api-reference/schema/newbusiness", 
         "api-reference/schema/business",
         "api-reference/schema/emptyresponse",
-        "api-reference/schmea/enrichedtransactiontomatch"
+        "api-reference/schema/enrichedtransactiontomatch"
       ]
     }
   ]
