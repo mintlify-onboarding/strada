@@ -136,7 +136,10 @@
         "api-reference/schema/newexpense",
         "api-reference/schema/newaccesstoken",
         "api-reference/schema/accesstoken",
-        "api-reference/schema/getapiconnectiontoken"
+        "api-reference/schema/getapiconnectiontoken",
+        "api-reference/schema/apiconnectiontoken",
+        "api-reference/schema/businessinfo",
+        "api-reference/schema/deleteconnectionstatus"
       ]
     }
   ]
