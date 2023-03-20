@@ -114,7 +114,10 @@
       "group": "Schemas",
       "pages": [
         "api-reference/schema/rule",
-        "api-reference/schema/error"
+        "api-reference/schema/error",
+        "api-reference/schema/newrule",
+        "api-reference/schema/newplatform",
+        "api-reference/schema/newplatform"
       ]
     }
   ]
