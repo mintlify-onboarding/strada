@@ -15,13 +15,13 @@
   },
   "topbarCtaButton": {
     "name": "Get Early Access",
-    "url": "https://www.getstrada.co/"
+    "url": "https://www.getstrada.com/"
   },
   "anchors": [
     {
-      "name": "API Reference",
-      "icon": "square-terminal",
-      "url": "api-reference"
+      "name": "Get Early Access",
+      "icon": "key",
+      "url": "https://www.getstrada.com/"
     }
   ],
   "navigation": [
