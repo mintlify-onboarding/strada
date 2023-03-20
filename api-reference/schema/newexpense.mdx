@@ -1,0 +1,188 @@
+---
+title: "NewExpense"
+---
+
+<ParamField path="payment_account_id" type="string" required>
+</ParamField>
+<ParamField path="vendor_id" type="string" required>
+</ParamField>
+
+<ParamField path="currency" type="string">
+    **ISO 4217 currency code** Allowed values: `AFN` `EUR` `ALL` `DZD` `USD` `AOA` `XCD` `ARS` `AMD` `AWG` `AUD` `AZN` `BSD` `BHD``BDT` `BBD` `BYN` `BZD` `XOF` `BMD` `INR` `BTN` `BOB` `BOV` `BAM` `BWP` `NOK` `BRL` `BND` `BGN` `BIF` `CVE` `KHR` `XAF` `CAD` `KYD` `CLP` `CLF` `CNY` `COP` `COU` `KMF` `CDF` `NZD` `CRC` `HRK` `CUP` `CUC` `ANG` `CZK` `DKK` `DJF` `DOP` `EGP` `SVC` `ERN` `SZL`
+`ETB`
+`FKP`
+`FJD`
+`XPF`
+`GMD`
+`GEL`
+`GHS`
+`GIP`
+`GTQ`
+`GBP`
+`GNF`
+`GYD`
+`HTG`
+`HNL`
+`HKD`
+`HUF`
+`ISK`
+`IDR`
+`XDR`
+`IRR`
+`IQD`
+`ILS`
+`JMD`
+`JPY`
+`JOD`
+`KZT`
+`KES`
+`KPW`
+`KRW`
+`KWD`
+`KGS`
+`LAK`
+`LBP`
+`LSL`
+`ZAR`
+`LRD`
+`LYD`
+`CHF`
+`MOP`
+`MKD`
+`MGA`
+`MWK`
+`MYR`
+`MVR`
+`MRU`
+`MUR`
+`XUA`
+`MXN`
+`MXV`
+`MDL`
+`MNT`
+`MAD`
+`MZN`
+`MMK`
+`NAD`
+`NPR`
+`NIO`
+`NGN`
+`OMR`
+`PKR`
+`PAB`
+`PGK`
+`PYG`
+`PEN`
+`PHP`
+`PLN`
+`QAR`
+`RON`
+`RUB`
+`RWF`
+`SHP`
+`WST`
+`STN`
+`SAR`
+`RSD`
+`SCR`
+`SLL`
+`SLE`
+`SGD`
+`XSU`
+`SBD`
+`SOS`
+`SSP`
+`LKR`
+`SDG`
+`SRD`
+`SEK`
+`CHE`
+`CHW`
+`SYP`
+`TWD`
+`TJS`
+`TZS`
+`THB`
+`TOP`
+`TTD`
+`TND`
+`TRY`
+`TMT`
+`UGX`
+`UAH`
+`AED`
+`USN`
+`UYU`
+`UYI`
+`UYW`
+`UZS`
+`VUV`
+`VES`
+`VED`
+`VND`
+`YER`
+`ZMW`
+`ZWL`
+`XBA`
+`XBB`
+`XBC`
+`XBD`
+`XTS`
+`XXX`
+`XAU`
+`XPD`
+`XPT`
+`XAG`   
+</ParamField>
+
+<ParamField path="exchange_rate" type="number">
+</ParamField>
+<ParamField path="expense_date" type="string<date>">
+</ParamField>
+<ParamField path="memo" type="string">
+</ParamField>
+
+<ResponseField name="line_items" type="array{object}">
+  <Expandable title="properties">
+    <ResponseField name="expense_account_id" type="string" required>
+    </ResponseField>
+
+    <ResponseField name="amount" type="number" required>
+    </ResponseField>
+
+    <ResponseField name="description" type="string">
+    </ResponseField>
+
+    <ResponseField name="class_id" type="string">
+    </ResponseField>
+
+    <ResponseField name="department_id" type="string">
+    </ResponseField>
+
+    <ResponseField name="location_id" type="string">
+    </ResponseField>
+
+  </Expandable>
+</ResponseField>
+
+```json Example
+{
+  "payment_account_id": "string",
+  "vendor_id": "string",
+  "currency": "AFN",
+  "exchange_rate": 0,
+  "expense_date": "2019-08-24",
+  "memo": "string",
+  "line_items": [
+    {
+      "expense_account_id": "string",
+      "amount": 0,
+      "description": "string",
+      "class_id": "string",
+      "department_id": "string",
+      "location_id": "string"
+    }
+  ]
+}
+```
+
