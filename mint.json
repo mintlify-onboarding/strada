@@ -117,7 +117,11 @@
         "api-reference/schema/error",
         "api-reference/schema/newrule",
         "api-reference/schema/newplatform",
-        "api-reference/schema/newplatform"
+        "api-reference/schema/platform",
+        "api-reference/schema/newbusiness", 
+        "api-reference/schema/business",
+        "api-reference/schema/emptyresponse",
+        "api-reference/schmea/enrichedtransactiontomatch"
       ]
     }
   ]

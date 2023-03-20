@@ -1,8 +1,8 @@
 ---
-title: "Platform"
+title: "Business"
 ---
 
-<ParamField path="id" type="string" required>
+<ParamField path="id" type="string">
 </ParamField>
 <ParamField path="created" type="string<date-time>">
 </ParamField>
@@ -10,11 +10,11 @@ title: "Platform"
 </ParamField>
 <ParamField path="display_name" type="string" required>
 </ParamField>
-<ParamField path="website_url" type="string">
+<ParamField path="website" type="string">
 </ParamField>
-<ParamField path="link_logo" type="string">
+<ParamField path="email" type="string">
 </ParamField>
-<ParamField path="link" type="string">
+<ParamField path="cache_platform_results" type="boolean">
 </ParamField>
 
 ```json Example
@@ -23,8 +23,8 @@ title: "Platform"
   "created": "2019-08-24T14:15:22Z",
   "updated": "2019-08-24T14:15:22Z",
   "display_name": "string",
-  "website_url": "string",
-  "link_logo": "string",
-  "logo": "string"
+  "website": "string",
+  "email": "string",
+  "cache_platform_results": true
 }
 ```
