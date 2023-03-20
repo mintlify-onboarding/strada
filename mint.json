@@ -109,6 +109,12 @@
           ]
         }
       ]
+    },
+    {
+      "group": "Schemas",
+      "pages": [
+        "schema/rule"
+      ]
     }
   ]
 }
